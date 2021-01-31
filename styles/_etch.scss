@@ -22,13 +22,24 @@
     width: 600px;
     min-width: 600px;
     margin: 10px auto;
+    background-color: $lightGray;
     border: blue 3px dashed;
+    display: flex;
+    flex-wrap: wrap;
+
+    &__part {
+        width: 6.25%;
+        height: 6.25%;
+        background-color: #fff;
+        border: lightgray 0.5px solid;
+    }
 }
 
 .controls {
     height: 450px;
     width: 150px;
     margin: 10px auto;
+    background-color: $lightGray;
     border: black 3px dashed;
 }
 

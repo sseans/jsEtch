@@ -1,7 +1,3 @@
-:root {
-  --howdy: white;
-}
-
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -78,13 +74,27 @@ body {
   width: 600px;
   min-width: 600px;
   margin: 10px auto;
+  background-color: #D6D6D6;
   border: blue 3px dashed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.canvas__part {
+  width: 6.25%;
+  height: 6.25%;
+  background-color: #fff;
+  border: lightgray 0.5px solid;
 }
 
 .controls {
   height: 450px;
   width: 150px;
   margin: 10px auto;
+  background-color: #D6D6D6;
   border: black 3px dashed;
 }
 
