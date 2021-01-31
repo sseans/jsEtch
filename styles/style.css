@@ -14,9 +14,16 @@ html {
 body {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
-  height: 100%;
+  height: 100vh;
   width: 100%;
   line-height: 1.3;
   font-family: 'Montserrat', sans-serif;
+}
+
+.body__wrapper {
+  background: #c9c9bf;
+  background: linear-gradient(73deg, #c9c9bf 0%, #fffff2 100%);
+  height: 100%;
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */

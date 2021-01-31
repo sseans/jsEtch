@@ -11,8 +11,18 @@ html {
 
 body {
     box-sizing: inherit;
-    height: 100%;
+    height: 100vh;
     width: 100%;
     line-height: 1.3;
     font-family: 'Montserrat', sans-serif;
+}
+
+.body {
+    
+    &__wrapper {
+        background: rgb(201,201,191);
+        background: linear-gradient(73deg, rgba(201,201,191,1) 0%, rgba(255,255,242,1) 100%);
+        height: 100%;
+        width: 100%;
+    }
 }
