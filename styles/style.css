@@ -76,11 +76,8 @@ body {
   margin: 10px auto;
   background-color: #D6D6D6;
   border: blue 3px dashed;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  display: -ms-grid;
+  display: grid;
 }
 
 .canvas__part {
@@ -94,6 +91,27 @@ body {
   margin: 10px auto;
   background-color: #D6D6D6;
   border: black 3px dashed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.controls__slider {
+  width: 125px;
+}
+
+.controls__clearbutton {
+  width: 125px;
+  height: 30px;
 }
 
 @media screen and (max-width: 950px) {
