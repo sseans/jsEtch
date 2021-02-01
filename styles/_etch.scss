@@ -50,15 +50,34 @@
 
     &__clearbutton {
         width: 125px;
+        background-color: #fff;
         height: 30px;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        &:hover {
+            background-color: rgb(243, 243, 243);
+        }
     }
 
     &__colorpicker {
         display: flex; 
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-around;
         font-size: 0.8rem;
-        width: 125px;
+        width: 127.5px;
+        border: 0px transparent solid;
+        border-radius: 5px;
+        background-color: #fff;
+        &:hover {
+            background-color: rgb(243, 243, 243);
+        }
+        input {
+            background-color: transparent;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+        }
     }
 }
 
