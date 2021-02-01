@@ -21,8 +21,7 @@ body {
 }
 
 .body__wrapper {
-  background: #c9c9bf;
-  background: linear-gradient(73deg, #c9c9bf 0%, #fffff2 100%);
+  background-color: #EDF2F4;
   height: 100%;
   width: 100%;
   display: -webkit-box;
@@ -45,10 +44,25 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border: palegoldenrod 3px solid;
+}
+
+.etch__title {
+  color: #2B2D42;
+  font-size: 5rem;
+}
+
+.etch__title span {
+  color: #EF233C;
 }
 
 .etch__container {
@@ -66,7 +80,6 @@ body {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  border: orange 3px solid;
 }
 
 .canvas {
@@ -75,22 +88,21 @@ body {
   min-width: 600px;
   margin: 10px auto;
   background-color: #D6D6D6;
-  border: blue 3px dashed;
   display: -ms-grid;
   display: grid;
 }
 
 .canvas__part {
-  background-color: #fff;
+  background-color: #2B2D42;
   border: lightgray 0.5px solid;
 }
 
 .controls {
-  height: 450px;
+  height: 250px;
   width: 150px;
   margin: 10px auto;
-  background-color: #D6D6D6;
-  border: black 3px dashed;
+  background-color: #2B2D42;
+  border-radius: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -107,6 +119,32 @@ body {
 
 .controls__slider {
   width: 125px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.controls__slider .canvassize {
+  border: 0px transparent solid;
+  border-radius: 5px;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50px;
 }
 
 .controls__clearbutton {
@@ -151,8 +189,12 @@ body {
 
 @media screen and (max-width: 950px) {
   .controls {
-    height: 150px;
+    height: 75px;
     width: 450px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 /*# sourceMappingURL=style.css.map */
